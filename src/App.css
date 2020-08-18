@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+
+/* SideBar starts */
+#wrapper {
+  overflow-x: hidden;
+  display: flex;
+  /* height: 100%; */
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+.sidenav-logo {
+  width: 12rem;
+}
+
+#page-content-wrapper {
+  width: 85vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
